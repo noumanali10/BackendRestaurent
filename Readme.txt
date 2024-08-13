@@ -80,6 +80,8 @@ Get all reserve table
 
 Request Post && http://localhost:5000/api/reserve/bookedtables
 
+Required Fields 
+
 {
     "date": "2024-08-24",
     "slot": "8:00 PM - 9:00 PM"
@@ -106,12 +108,15 @@ For Reservation Table
 
 Request Post && http://localhost:5000/api/reserve
 
+Required Fields 
+
 {
     "customerName": "John Doe",
     "phone": "1234567890",
     "email": "john@example.com",
     "date": "2024-08-24",
     "slot": "9:00 PM - 10:00 PM",
+    "description": "I wanna fuck " Optional
     "tableId": "66b9e78cede2c5db75e69505"
 }
 
