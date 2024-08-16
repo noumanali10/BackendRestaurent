@@ -2,14 +2,14 @@
 
 Important Every Route Header is Content Type: Application/Json
 
-Request Get &&  http://localhost:5000
+Request Get &&  https://backend-restaurent.vercel.app/
 Response Hello World 
 
 // Table Routes
 
 1- Create New Table 
 
-Request Post && http://localhost:5000/api/tables
+Request Post && https://backend-restaurent.vercel.app/api/tables
 
 Required Fields 
 
@@ -29,7 +29,7 @@ Response
 
 2- Get All Tables 
 
-Request get && http://localhost:5000/api/tables
+Request get && https://backend-restaurent.vercel.app/api/tables
 
 [
     {
@@ -78,7 +78,7 @@ Request get && http://localhost:5000/api/tables
 
 Get all reserve table 
 
-Request Post && http://localhost:5000/api/reserve/bookedtables
+Request Post && https://backend-restaurent.vercel.app/api/reserve/bookedtables
 
 Required Fields 
 
@@ -106,7 +106,7 @@ Response
 
 For Reservation Table 
 
-Request Post && http://localhost:5000/api/reserve
+Request Post && https://backend-restaurent.vercel.app/api/reserve
 
 Required Fields 
 
