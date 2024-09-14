@@ -7,12 +7,14 @@ const Table = require('../Models/tableModel');
 // @access  Public
 router.post('/', async (req, res) => {
   try {
-    const { name, seat } = req.body;
+    const { name, seat, TableNumber } = req.body;
 
     let table = new Table({
       name,
-      seat
+      seat,
+      TableNumber,
     });
+    console.log(table);
 
     await table.save();
     res.json(table);
@@ -68,6 +70,7 @@ router.put('/:id', async (req, res) => {
 
     table.name = name || table.name;
     table.seat = seat || table.seat;
+    table.TableNumber = TableNumber || table.TableNumber;
 
     await table.save();
     res.json(table);

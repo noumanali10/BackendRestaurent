@@ -18,6 +18,7 @@ try {
     console.error('Error connecting to MongoDB:', error.message);
 }
 
+
 // Middleware
 app.use(express.json());
 app.use(cors());
